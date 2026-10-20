@@ -1,0 +1,38 @@
+# =============================================================================
+# ARGON OPEN-CORE B2B SECURITY LOCKDOWN (.gitignore)
+# Seuls le juge public (benchmark_engine.py, baseline_algorithm.py), les tests
+# unitaires publics, le README et la vitrine publique (public_store/index.html
+# & proof_benchmark.json) sont autorisés sur GitHub. Tout le moteur R&D,
+# la base SQLite et les formules propriétaires restent 100% privés sur D:\.
+# =============================================================================
+
+# 1. Secrets, Clés API & Environnements
+.env
+.env.*
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# 2. Propriété Intellectuelle & Bases de Données de Formules (STRICTEMENT PRIVÉ)
+DECOUVERTE_A_VENDRE/
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.zip
+
+# 3. Moteur R&D Interne, Prompts Doctoraux & Prospection B2B (STRICTEMENT PRIVÉ)
+src/agents_pole.py
+src/database.py
+src/evolution_loop.py
+src/commercial_packager.py
+src/sales_autopilot.py
+src/lead_hunter.py
+run_lab.py
+verify_zero_leak.py
+tests/test_lab.py
+dashboard.html
+public_store/dashboard.html
+*.bat
+.github/
