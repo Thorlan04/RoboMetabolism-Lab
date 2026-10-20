@@ -100,67 +100,48 @@ Si $d_{stop} > d_{obstacle}$, une collision critique irréversible est enregistr
 
 ---
 
-## 📁 5. Architecture du Répertoire
+## 📁 5. Architecture Open-Core & Propriété Intellectuelle
 
-```
-D:\RoboMetabolism-Lab/
-├── run_lab.py                   # Moteur d'orchestration maître CLI
-├── verify_zero_leak.py          # Audit cryptographique strict de protection IP
-├── requirements.txt             # Dépendances ultra-légères (NumPy pur, python-dotenv, google-genai)
-├── .env                         # Clés API et configuration confidentielle
-├── .env.example                 # Modèle de configuration public
-├── data/
-│   └── evolution_history.db     # Base SQLite traçant les générations et le Top 20
-├── src/
-│   ├── benchmark_engine.py      # Le Juge Physique & Énergétique Déterministe
-│   ├── baseline_algorithm.py    # Les 3 standards industriels de référence
-│   ├── agents_pole.py           # Pôle doctoral multi-agents (Gemini + fallback mathématique)
-│   ├── evolution_loop.py        # Boucle d'évolution R&D et sélection des champions
-│   ├── ip_protector.py          # Hachage SHA-256 et obfuscation de stub public
-│   ├── commercial_packager.py   # Empaquetage du livrable commercial sous licence
-│   ├── sales_autopilot.py       # Générateur de vitrine B2B & calculateur ROI
-│   └── lead_hunter.py           # Chasseur de prospects ciblés (ROS2, Jetson, Isaac Sim)
-├── public_store/
-│   ├── index.html               # Vitrine B2B Dark Tech + Calculateur ROI interactif
-│   └── proof_benchmark.json     # Preuve publique certifiée (stub 8 lignes, zéro fuite)
-└── DECOUVERTE_A_VENDRE/
-    ├── algorithme_champion.py   # Code source propriétaire complet + wrapper ROS2
-    ├── RAPPORT_EXECUTIF_METABOLISME_ROBOTIQUE.md
-    ├── SHA256_CERTIFICATE.txt   # Certificat d'intégrité cryptographique
-    ├── COMM_KIT_COMPLET.md      # Kit commercial, pitchs & templates de prospection
-    ├── PROSPECTS_DU_JOUR.md     # Leads qualifiés du jour
-    └── RoboMetabolism_Enterprise_Deliverable.zip
-```
+Conformément à la politique **Argon Open-Core B2B Lockdown** de la flotte R&D, ce dépôt GitHub public est conçu pour permettre aux auditeurs et directeurs techniques de vérifier la rigueur du benchmark sans exposer le secret industriel :
+
+- 🌐 **Public sur GitHub (Open-Core Harness)** :
+  - `src/benchmark_engine.py` : Le simulateur physique déterministe (200 missions, modèle Li-Ion & thermique Orin).
+  - `src/baseline_algorithm.py` : Les 3 standards industriels de référence.
+  - `tests/test_evaluator_contract.py` : La suite de tests unitaires formels et garde-fous anti-triche AST.
+  - `public_store/` : La vitrine web B2B, le calculateur de ROI interactif et la preuve chiffrée `proof_benchmark.json` (avec stub public obfusqué de 8 lignes).
+  - `LICENSE` : Licence commerciale d'évaluation interdisant tout usage en production sans licence payante.
+
+- 🔒 **Privé & Débloqué via la Licence Commerciale Polar.sh (`DECOUVERTE_A_VENDRE/`)** :
+  - `algorithme_champion.py` : Le code source mathématique complet du champion certifié (`Argon_Shepherd_LogBarrier_v2_1` - score 97.35/100).
+  - `RoboMetabolismROS2Scheduler` : Le wrapper ROS2 prêt pour NVIDIA Jetson Orin (Nano, NX, AGX).
+  - `RAPPORT_EXECUTIF_METABOLISME_ROBOTIQUE.md` : Le rapport d'audit exécutif complet pour comités de direction.
+  - `SHA256_CERTIFICATE.txt` : Le certificat cryptographique d'intégrité immuable.
 
 ---
 
-## 🚀 6. Utilisation Rapide & Reproduction Déterministe
+## 🚀 6. Vérification Publique & Reproduction Déterministe
 
 ### Installation
 ```bash
-cd D:\RoboMetabolism-Lab
+git clone https://github.com/Thorlan04/RoboMetabolism-Lab.git
+cd RoboMetabolism-Lab
 pip install -r requirements.txt
 ```
 
-### Exécuter la Boucle d'Évolution (15 Générations)
+### Vérifier le Contrat & les Baselines Industrielles
 ```bash
-python run_lab.py --generations 15 --seed 2026
+python -m unittest tests/test_evaluator_contract.py
 ```
 
-### Vérifier l'Absence de Fuite de Propriété Intellectuelle
+### Évaluer les 3 Standards Industriels Déterministes (200 Missions)
 ```bash
-python verify_zero_leak.py
-```
-
-### Lancer la Prospection Ciblée de Flottes Robotiques
-```bash
-python -c "from src.lead_hunter import hunt_and_report; hunt_and_report()"
+python -c "from src.benchmark_engine import BenchmarkEngine; b = BenchmarkEngine(); [print(f'{k}: {v}') for k, v in b.evaluate_baselines().items()]"
 ```
 
 ---
 
-## 🔒 7. Licence Commerciale B2B
+## 🔒 7. Déploiement en Production & Licence B2B
 
-Le code source complet de l'algorithme champion, le wrapper node ROS2 prêt pour Jetson Orin et les droits d'exploitation commerciale sont disponibles sous contrat de licence B2B :
+Le code source complet de la formule championne (`Argon_Shepherd_LogBarrier_v2_1`), le wrapper ROS2 et les droits d'exploitation commerciale sont délivrés instantanément sous licence B2B :
 
-👉 **[Acheter la Licence Entreprise sur Polar.sh](https://buy.polar.sh/polar_cl_XceignaL6bXyot2FQuNTP9d14PWdHCKoESuN62sF7m6)**
+👉 **[Débloquer la Licence Commerciale sur Polar.sh](https://buy.polar.sh/polar_cl_XceignaL6bXyot2FQuNTP9d14PWdHCKoESuN62sF7m6)**
