@@ -35,4 +35,3 @@ tests/test_lab.py
 dashboard.html
 public_store/dashboard.html
 *.bat
-.github/

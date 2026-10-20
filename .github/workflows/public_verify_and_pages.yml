@@ -1,0 +1,71 @@
+name: Public Benchmark Verification & Showcase Deployment
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+# Permissions minimales pour tester et déployer GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # 1. Vérification publique du contrat de benchmark
+  verify_contract:
+    name: Verify Public Benchmark Harness
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Public Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Install Pure NumPy
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Formal Public Contract Tests (Anti-Cheat & Physics)
+        run: |
+          python -m unittest tests/test_evaluator_contract.py
+
+      - name: Verify Baselines Deterministic Reproduction
+        run: |
+          python -c "from src.benchmark_engine import BenchmarkEngine; b = BenchmarkEngine(); res = b.evaluate_baselines(); assert len(res) == 3; print('Baselines Verified OK')"
+
+  # 2. Déploiement automatique de la vitrine B2B sur GitHub Pages
+  deploy_pages:
+    name: Deploy B2B Showcase to GitHub Pages
+    needs: verify_contract
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Public Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Public Store Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './public_store'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
