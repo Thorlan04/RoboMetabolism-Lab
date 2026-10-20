@@ -32,6 +32,7 @@ src/lead_hunter.py
 run_lab.py
 verify_zero_leak.py
 tests/test_lab.py
+hunt_prospects.py
 dashboard.html
 public_store/dashboard.html
 *.bat
