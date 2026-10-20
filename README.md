@@ -6,7 +6,7 @@
 [![Middleware](https://img.shields.io/badge/ros2-Humble_|_Iron_|_Jazzy-22314E.svg)](https://www.ros.org/)
 [![Safety SLA](https://img.shields.io/badge/SLA_Collision_Free-100%25-brightgreen.svg)]()
 [![Thermal Violations](https://img.shields.io/badge/Thermal_Violations-0_(<82°C)-blue.svg)]()
-[![License](https://img.shields.io/badge/license-Commercial_Polar.sh-ff5a5f.svg)](https://buy.polar.sh/polar_cl_XceignaL6bXyot2FQuNTP9d14PWdHCKoESuN62sF7m6)
+[![License](https://img.shields.io/badge/license-Commercial_Polar.sh-ff5a5f.svg)](https://buy.polar.sh/polar_cl_bFFXsk7AnJNtkizFweOUaZ69bXdLyE0MaquYb2c7nSe)
 
 > **6ème Laboratoire Algorithmique Autonome** de la flotte R&D.  
 > Conçu pour résoudre le goulet d'étranglement fatal de l'autonomie et de la dissipation thermique des robots IA (humanoïdes, quadrupèdes, drones, AGV/AMR d'entrepôt) exploitant des modèles de vision/action (VLA / VLM) sur NVIDIA Jetson Orin.
@@ -144,4 +144,4 @@ python -c "from src.benchmark_engine import BenchmarkEngine; b = BenchmarkEngine
 
 Le code source complet de la formule championne (`Argon_Shepherd_LogBarrier_v2_1`), le wrapper ROS2 et les droits d'exploitation commerciale sont délivrés instantanément sous licence B2B :
 
-👉 **[Débloquer la Licence Commerciale sur Polar.sh](https://buy.polar.sh/polar_cl_XceignaL6bXyot2FQuNTP9d14PWdHCKoESuN62sF7m6)**
+👉 **[Débloquer la Licence Commerciale sur Polar.sh](https://buy.polar.sh/polar_cl_bFFXsk7AnJNtkizFweOUaZ69bXdLyE0MaquYb2c7nSe)**

@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-20 21:54:58 UTC",
+  "timestamp": "2026-10-20 22:16:24 UTC",
   "algorithm_name": "Argon_Shepherd_LogBarrier_v2_1",
   "sha256_checksum": "e13bc2373e9335761b125a3fe3ed5a87748621e2568976b11236112d296c97b7",
   "license": "Commercial Proprietary - Available via Polar.sh Instant Delivery",
-  "payment_url": "https://buy.polar.sh/polar_cl_XceignaL6bXyot2FQuNTP9d14PWdHCKoESuN62sF7m6",
+  "payment_url": "https://buy.polar.sh/polar_cl_bFFXsk7AnJNtkizFweOUaZ69bXdLyE0MaquYb2c7nSe",
   "public_code_stub": "def arbitrate_metabolic_tier(\n    obstacle_dist: float, velocity: float, sensor_entropy: float,\n    manipulation_comp: float, battery_soc: float, junction_temp: float,\n    ambient_temp: float, is_motor_idle: bool\n) -> int:\n    # [PROPRIETARY MATHEMATICAL CORE - UNLOCKED IN COMMERCIAL B2B LICENSE]\n    # Algorithm: Argon_Shepherd_LogBarrier_v2_1 | SHA-256: e13bc2373e9335761b125a3f...\n    # Certified Zero Thermal Violation (< 82°C) & Zero Critical Collision (100% SLA)\n    return int(optimal_metabolic_cognitive_tier)",
   "metrics": {
     "mission_survival_rate_pct": 100.0,

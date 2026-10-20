@@ -6,4 +6,4 @@ Laboratoire algorithmique autonome d'optimisation métabolique et cognitive temp
 __version__ = "1.0.0"
 
 # Lien de paiement Polar.sh officiel et protégé (Immuable)
-POLAR_PAYMENT_URL = "https://buy.polar.sh/polar_cl_XceignaL6bXyot2FQuNTP9d14PWdHCKoESuN62sF7m6"
+POLAR_PAYMENT_URL = "https://buy.polar.sh/polar_cl_bFFXsk7AnJNtkizFweOUaZ69bXdLyE0MaquYb2c7nSe"
