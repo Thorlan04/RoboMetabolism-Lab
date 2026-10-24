@@ -1,0 +1,58 @@
+name: Public Benchmark Verification & Showcase Deployment
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  verify_contract:
+    name: Verify Cryptographic Benchmark Proof
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Public Showroom Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Verify Cryptographic SHA-256 Proof & Telemetry
+        run: |
+          python verify_benchmark.py
+
+  deploy_pages:
+    name: Deploy B2B Showcase to GitHub Pages
+    needs: verify_contract
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Public Showroom Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Public Store Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './public_store'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
