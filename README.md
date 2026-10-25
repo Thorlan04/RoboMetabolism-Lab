@@ -30,7 +30,7 @@ Evaluated across **200 deterministic 3,600-second robotic missions** modeling no
 | **Always-On VLA Baseline (45W)** | `0.0%` | `24.43%` | `+17.46%` | `9,323` | `339` | Failed (Brownout/Throttle) |
 | **Static Threshold Governor** | `25.5%` | `46.27%` | `+29.20%` | `7` | `320` | Failed (Collisions) |
 | **ROS2 Dynamic QoS Heuristic** | `100.0%` | `96.15%` | `+46.67%` | `0` | `0` | Industry Reference |
-| **RoboMetabolism Champion (`Argon_Shepherd_LogBarrier_v32_2`)** | **`100.0%`** | **`98.39%`** | **`+58.88%`** | **`0`** | **`0`** | **CERTIFIED CHAMPION** |
+| **RoboMetabolism Champion (`Argon_Shepherd_LogBarrier_v25_2`)** | **`100.0%`** | **`98.39%`** | **`+58.88%`** | **`0`** | **`0`** | **CERTIFIED CHAMPION** |
 
 ---
 
