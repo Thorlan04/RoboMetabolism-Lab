@@ -1,20 +1,20 @@
 {
-  "timestamp": "2026-10-27 07:13:45 UTC",
-  "algorithm_name": "Argon_Shepherd_LogBarrier_v37_2",
-  "sha256_checksum": "2f6e5b15bf439b5aa1f00f45aea4750bb133c01da69c72bb9f49e6cf8b5db5a8",
+  "timestamp": "2026-10-27 07:29:28 UTC",
+  "algorithm_name": "Argon_Shepherd_LogBarrier_v41_4",
+  "sha256_checksum": "f0b96454ca0b54032035fa11acff736732641f67078effaa1f2b85788c4ea399",
   "license": "Commercial Proprietary - Available via Polar.sh Instant Delivery",
   "payment_url": "https://buy.polar.sh/polar_cl_bFFXsk7AnJNtkizFweOUaZ69bXdLyE0MaquYb2c7nSe",
-  "public_code_stub": "def arbitrate_metabolic_tier(\n    obstacle_dist: float, velocity: float, sensor_entropy: float,\n    manipulation_comp: float, battery_soc: float, junction_temp: float,\n    ambient_temp: float, is_motor_idle: bool\n) -> int:\n    # [PROPRIETARY MATHEMATICAL CORE - UNLOCKED IN COMMERCIAL B2B LICENSE]\n    # Algorithm: Argon_Shepherd_LogBarrier_v37_2 | SHA-256: 2f6e5b15bf439b5aa1f00f45...\n    # Certified Zero Thermal Violation (< 82°C) & Zero Critical Collision (100% SLA)\n    return int(optimal_metabolic_cognitive_tier)",
+  "public_code_stub": "def arbitrate_metabolic_tier(\n    obstacle_dist: float, velocity: float, sensor_entropy: float,\n    manipulation_comp: float, battery_soc: float, junction_temp: float,\n    ambient_temp: float, is_motor_idle: bool\n) -> int:\n    # [PROPRIETARY MATHEMATICAL CORE - UNLOCKED IN COMMERCIAL B2B LICENSE]\n    # Algorithm: Argon_Shepherd_LogBarrier_v41_4 | SHA-256: f0b96454ca0b54032035fa11...\n    # Certified Zero Thermal Violation (< 82°C) & Zero Critical Collision (100% SLA)\n    return int(optimal_metabolic_cognitive_tier)",
   "metrics": {
     "mission_survival_rate_pct": 100.0,
     "task_completion_rate_pct": 98.48,
-    "net_autonomy_gain_pct": 58.83,
+    "net_autonomy_gain_pct": 58.84,
     "avg_soc_end_pct": 52.74,
     "thermal_violations": 0,
     "critical_collisions": 0,
-    "max_junction_temp_c": 63.47,
+    "max_junction_temp_c": 63.39,
     "episodic_compressions": 44444,
-    "p99_decision_latency_ms": 0.0039,
+    "p99_decision_latency_ms": 0.0042,
     "composite_score": 99.47
   },
   "baselines_comparison": {
